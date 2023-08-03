@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         // Declare an audio manager
         audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        // Set up the SeekBar to adjust volume
+        // Set up the SeekBar to adjust the volume
         SeekBar volumeSeekBar = findViewById(R.id.volumeSeekBar);
         volumeSeekBar.setMax(audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC));
         volumeSeekBar.setProgress(audioManager.getStreamVolume(AudioManager.STREAM_MUSIC));
